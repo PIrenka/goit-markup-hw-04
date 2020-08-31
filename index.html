@@ -38,7 +38,13 @@
             </nav>
 
             <ul class="list mail-tel-nav flexbox">
-                <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
+                <ul>
+                    <li class="item">
+                        <img class="icon" href="./images/icons/mail-icon.svg" width="16">
+                    </li>
+                    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                </ul>
+                <li class="item"> </li>
                 <li class="item"> <a href="tel:+380991111111" class="link">+38 096 111 11 11</a> </li>
             </ul>
 
@@ -50,7 +56,7 @@
         <!-- Шапка сайта -->
         <section class="hero">
             <div class="container flexbox">
-                <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 <button type="button" class="button"> <span>Заказать услугу</span> </button>
             </div>
         </section>
@@ -141,11 +147,41 @@
             </div>
         </section>
 
+        <!-- ПОСТОЯННЫЕ КЛИЕНТЫ -->
+
+        <section class="our-clients">
+            <div class="container">
+                <h2 class="title">Постоянные клиенты</h2>
+                <ul class="list icons flexbox">
+                    <li class="item">
+                        <svg class="icon" width="45" height="50">
+                            <use href="./images/icons/clients-1.svg"></use>
+                        </svg>
+                    </li>
+                    <li class="item">
+                        <svg></svg>
+                    </li>
+                    <li class="item">
+                        <svg></svg>
+                    </li>
+                    <li class="item">
+                        <svg></svg>
+                    </li>
+                    <li class="item">
+                        <svg></svg>
+                    </li>
+                    <li class="item">
+                        <svg></svg>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
     </main>
 
     <!-- Подвал -->
     <footer class="page-footer">
-        <div class="container footer">
+        <div class="container footer flexbox">
             <ul class="list">
                 <li class="item">
                     <a href="/" lang="en" class="link logo"> <span class="web-logotext">Web</span><span
@@ -160,6 +196,14 @@
                 <li class="item"> <a href="mailto:info@example.com" class="link mailtel-in-footer">info@example.com</a>
                 </li>
                 <li class="item"> <a href="tel:+380991111111" class="link mailtel-in-footer">+38 099 111 11 11</a> </li>
+            </ul>
+
+            <p>присоединяйтесь</p>
+            <ul class="list">
+                <li class="item">Insta</li>
+                <li class="item">Twiter</li>
+                <li class="item">FB</li>
+                <li class="item">Linkedin</li>
             </ul>
         </div>
     </footer>

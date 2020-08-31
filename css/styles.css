@@ -67,6 +67,13 @@ body {
   padding: 0;
 }
 
+.title {
+  margin: 0;
+}
+.text {
+  margin: 0;
+}
+
 .link {
   /* стили к ссылкам во всем документе*/
   text-decoration: none;
@@ -162,20 +169,28 @@ body {
 /* ======================================================== */
 
 .hero {
-  /*  стили для секции Hero*/
+  /*  стили для секции Hero, особенно для фона Героя*/
   background: var(--title-background-color);
+  background-image: url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1599436800&Signature=WDVgOczkWaJ6izlPvtaJ0UglchnrAeoj~IlCVR96-TeplGpMRJTkYV1MJwFtwWpguAB3rAe4pDbLT1fUaaYLm1S3LVSl-m8~iKNIATmqbMuACjy5HncK3LvFKMnhCld0B8E1M0Shv3O2pJtjFYMe~q6Cn76Rm87sURBP8K4EYxhQ7nUtagnWwZtxDzQ~xdlWHSl3A6BDIW4pceE7nMDu6IK11nbxqBlUJaqWjtFKiAccDWiAqKREO7wXzwksSeUiAITxe98B6HHGm02l1WLiw06zLLo1YrJ0g-CjtR9L49y6Gl2PRPIUZxEzGxuQWipooiVaFOc7J2M65r-wtEKhNw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-size: auto auto; */
+  text-align: center;
+  /* height: 600px; */
 }
 
 .hero .container {
   /* стили для контейнера Героя с заголовком и кнопкой */
   /* outline: 5px solid yellow; */
-  max-width: 100%;
+  /* max-width: 100%; */
   flex-direction: column;
   align-items: center;
-  padding: 200px 252px;
+  /* padding: 200px 252px; */
+  max-width: 650px;
 }
 
-.hero-title {
+.hero .title {
   /* стили для заголовка сайта в Hero */
   color: var(--title-color);
   font-weight: 900;
@@ -184,7 +199,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -200,6 +214,7 @@ body {
 
   padding: 10px 32px;
   border: none;
+  outline: none;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
   cursor: pointer;
@@ -220,7 +235,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin: 0;
   padding: 0;
   margin-bottom: 10px;
 }
@@ -229,7 +243,6 @@ body {
   color: var(--inside-color);
   font-size: 14px;
   line-height: 1.71;
-  margin: 0;
   padding: 0;
 }
 
@@ -255,7 +268,6 @@ body {
   font-size: 36px;
   line-height: 1.71;
   text-align: center;
-  margin-top: 0;
   margin-bottom: 50px;
 }
 .whatwedo.item {
@@ -282,7 +294,6 @@ body {
 
 .our-team .container .title {
   /* стили к заголовку h2 Нашей Команды */
-  margin: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -302,18 +313,13 @@ body {
   margin-right: 30px;
 }
 .list.team .item {
-  /* фон карточек команды */
+  /* фон карточек команды и cтили для бордера карточки*/
   background-color: var(--title-color);
   border-radius: 0px 0px 4px 4px;
-}
-
-/* cтили для бордера карточки ???*/
-/* position: relative;
-  border: 1px solid var(--team-container-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-} */
+  /* position: relative; */
+}
 
 .list.team .item .title {
   /* стили к заголовкам списка h3 Нашей Команды  */
@@ -327,7 +333,6 @@ body {
 }
 .list.team .item .text {
   /* стили к параграфам списка Нашей Команды  */
-  margin: 0;
   color: var(--inside-color);
   font-size: 16px;
   line-height: 1.19;
@@ -380,6 +385,17 @@ body {
 
 /* =================PORTFOLIO-PAGE-кнопки================== */
 
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .portfolio-button {
   /* стили для ряда кнопок в Портфолио */
   font-weight: 500;
@@ -398,6 +414,11 @@ body {
   /* cтили для кнопок портфолио при ховере (изменение цвета заливки и текста) */
   background-color: var(--active-color);
   color: var(--title-color);
+  border-color: var(--active-color);
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
 }
 
 .page-portfolio .list.button {
@@ -413,8 +434,9 @@ body {
 }
 .page-portfolio .list.button .item {
   /* бордер для кнопок в верхнем ряду страници Портфолио */
-  border: solid var(--team-container-background);
+  border-color: solid var(--team-container-background);
   border-radius: 4px;
+  /* border: none; */
 }
 
 /* =================PORTFOLIO-PAGE-проекты================ */
@@ -425,7 +447,6 @@ body {
   font-size: 18px;
   line-height: 1.71;
   letter-spacing: 0.06em;
-  margin: 0;
   margin-bottom: 4px;
 }
 .page-portfolio .projects .text {
@@ -433,9 +454,9 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--inside-color);
-  margin: 0;
 }
 .under-the-pic {
+  /* отступы для контейнера текста под картинкой в карточке Проекты */
   padding: 20px 24px;
   /* text-align: left;
   vertical-align: top; */
@@ -449,8 +470,6 @@ body {
 .page-portfolio .projects .item {
   /* размер ширины под одну карточку */
   flex-basis: calc((100% - 30px * 2) / 3);
-}
-.page-portfolio .projects .item {
   /* отступы для карточек справа и снизу для всех в проектах Портфолио */
   margin-right: 30px;
   margin-bottom: 30px;
@@ -465,3 +484,40 @@ body {
   /* убирает отступы снизу у трёх последних карточек */
   margin-bottom: 0;
 }
+
+.page-portfolio .projects .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+/* *****************************************************************
+********************************************************************
+********************************************************************
+********************************************************************
+********************************************************************
+********************************************************************
+********************************************************************  */
+/* svg {
+  width: calc((100% - 30px * 5) / 6);
+  flex-wrap: nowrap;
+}
+svg img {
+  margin: 0;
+} */
+
+.our-clients .container {
+  padding: 94px 0px;
+}
+.our-clients .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* .icon {
+  --color1: red;
+  --color2: blue;
+} */
