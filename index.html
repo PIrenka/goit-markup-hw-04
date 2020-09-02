@@ -19,7 +19,7 @@
 
         <div class="container flexbox">
 
-            <a href="/" lang="en" class="link logo">
+            <a href="./index.html" lang="en" class="link logo">
                 <span class="web-logotext">Web</span><span class="studio-logotext">Studio</span>
             </a>
 
@@ -38,14 +38,10 @@
             </nav>
 
             <ul class="list mail-tel-nav flexbox">
-                <ul>
-                    <li class="item">
-                        <img class="icon" href="./images/icons/mail-icon.svg" width="16">
-                    </li>
-                    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                </ul>
-                <li class="item"> </li>
-                <li class="item"> <a href="tel:+380991111111" class="link">+38 096 111 11 11</a> </li>
+                <li class="item"> <svg class="icon-mail">
+                        <use href="./images/symbol-defs2.svg#mail"></use>
+                    </svg> <a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a></li>
+                <li class="item tel"> <a href="tel:+380991111111" class="link">+38 096 111 11 11</a> </li>
             </ul>
 
         </div>
@@ -65,7 +61,7 @@
         <section class="features">
             <div class="container">
                 <ul class="list flexbox">
-                    <li class="item">
+                    <li class="item feature-1">
                         <!-- ОСОБЕННОСТИ Feature 1 -->
                         <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                         <p class="text">
@@ -74,7 +70,7 @@
                         </p>
                     </li>
 
-                    <li class="item">
+                    <li class="item feature-2">
                         <!-- ОСОБЕННОСТИ Feature 2 -->
                         <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
                         <p class="text">
@@ -83,7 +79,7 @@
                         </p>
                     </li>
 
-                    <li class="item">
+                    <li class="item feature-3">
                         <!-- ОСОБЕННОСТИ Feature 3 -->
                         <h3 class="title">ПЛАНИРОВАНИЕ</h3>
                         <p class="text">
@@ -92,7 +88,7 @@
                         </p>
                     </li>
 
-                    <li class="item">
+                    <li class="item feature-4">
                         <!-- ОСОБЕННОСТИ Feature 4 -->
                         <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                         <p class="text">
@@ -125,6 +121,25 @@
                         <img src="./images/team-card-1-ID.jpg" alt="Игорь Демьяненко" width="270">
                         <h3 class="title"> Игорь Демьяненко </h3>
                         <p lang="en" class="text">Product Designer</p>
+                        <ul class="social-list flexbox">
+                            <li class="list"> <a href="https://www.instagram.com/" target="_blank" class="link">
+                                    <svg class="icon">
+                                        <use href="./images/sprite-old.svg#instagram"> </use>
+                                    </svg></a> </li>
+                            <li class="list"> <a href="https://www.twitter.com/" target="_blank" class="link">
+                                    <svg class="icon">
+                                        <use href="./images/sprite-old.svg#twitter"> </use>
+                                    </svg></a></li>
+                            <li class="list"> <a href="https://www.facebook.com/" target="_blank" class="link">
+                                    <svg class="icon">
+                                        <use href="./images/sprite-old.svg#facebook"> </use>
+                                    </svg></a></li>
+                            <li class="list"> <a href="https://www.linkedin.com/" target="_blank" class="link">
+                                    <svg class="icon">
+                                        <use href="./images/sprite-old.svg#linkedin"> </use>
+                                    </svg></a></li>
+
+                        </ul>
                     </li>
                     <li class="item">
                         <img src="./images/team-card-2-OR.jpg" alt="Ольга Репина" width="270">
@@ -184,7 +199,7 @@
         <div class="container footer flexbox">
             <ul class="list">
                 <li class="item">
-                    <a href="/" lang="en" class="link logo"> <span class="web-logotext">Web</span><span
+                    <a href="./index.html" lang="en" class="link logo"> <span class="web-logotext">Web</span><span
                             class="studio-logotext">Studio</span>
                     </a>
                 </li>

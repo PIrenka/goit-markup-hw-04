@@ -164,6 +164,31 @@ body {
   margin-right: 50px;
 }
 
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------*/
+
+/* .mail-tel-nav .mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  display: inline-flex;
+  background-image: url(../images/icons/mail-icon.svg);
+  /* background-size: cover; */
+/* }  */
+
+/* background-size: cover; */
+/* } */
+
+.icon-mail {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  /* background-color: red; */
+  background-position: bottom;
+}
 /* ======================================================== */
 /* ======================HERO============================== */
 /* ======================================================== */
@@ -171,23 +196,33 @@ body {
 .hero {
   /*  стили для секции Hero, особенно для фона Героя*/
   background: var(--title-background-color);
-  background-image: url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1599436800&Signature=WDVgOczkWaJ6izlPvtaJ0UglchnrAeoj~IlCVR96-TeplGpMRJTkYV1MJwFtwWpguAB3rAe4pDbLT1fUaaYLm1S3LVSl-m8~iKNIATmqbMuACjy5HncK3LvFKMnhCld0B8E1M0Shv3O2pJtjFYMe~q6Cn76Rm87sURBP8K4EYxhQ7nUtagnWwZtxDzQ~xdlWHSl3A6BDIW4pceE7nMDu6IK11nbxqBlUJaqWjtFKiAccDWiAqKREO7wXzwksSeUiAITxe98B6HHGm02l1WLiw06zLLo1YrJ0g-CjtR9L49y6Gl2PRPIUZxEzGxuQWipooiVaFOc7J2M65r-wtEKhNw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-image: url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1599436800&Signature=WDVgOczkWaJ6izlPvtaJ0UglchnrAeoj~IlCVR96-TeplGpMRJTkYV1MJwFtwWpguAB3rAe4pDbLT1fUaaYLm1S3LVSl-m8~iKNIATmqbMuACjy5HncK3LvFKMnhCld0B8E1M0Shv3O2pJtjFYMe~q6Cn76Rm87sURBP8K4EYxhQ7nUtagnWwZtxDzQ~xdlWHSl3A6BDIW4pceE7nMDu6IK11nbxqBlUJaqWjtFKiAccDWiAqKREO7wXzwksSeUiAITxe98B6HHGm02l1WLiw06zLLo1YrJ0g-CjtR9L49y6Gl2PRPIUZxEzGxuQWipooiVaFOc7J2M65r-wtEKhNw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"); */
+
+  /* не то что надо!!!! background-position: top 80px left 0px; */
   background-size: cover;
+  background-size: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1599436800&Signature=WDVgOczkWaJ6izlPvtaJ0UglchnrAeoj~IlCVR96-TeplGpMRJTkYV1MJwFtwWpguAB3rAe4pDbLT1fUaaYLm1S3LVSl-m8~iKNIATmqbMuACjy5HncK3LvFKMnhCld0B8E1M0Shv3O2pJtjFYMe~q6Cn76Rm87sURBP8K4EYxhQ7nUtagnWwZtxDzQ~xdlWHSl3A6BDIW4pceE7nMDu6IK11nbxqBlUJaqWjtFKiAccDWiAqKREO7wXzwksSeUiAITxe98B6HHGm02l1WLiw06zLLo1YrJ0g-CjtR9L49y6Gl2PRPIUZxEzGxuQWipooiVaFOc7J2M65r-wtEKhNw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-repeat: no-repeat;
+  background-position: top 35% center;
   /* background-size: auto auto; */
-  text-align: center;
+  /* text-align: center; */
   /* height: 600px; */
+  outline: 5px solid orange;
 }
 
 .hero .container {
   /* стили для контейнера Героя с заголовком и кнопкой */
-  /* outline: 5px solid yellow; */
-  /* max-width: 100%; */
+  outline: 5px solid yellow;
+  max-width: 1600px;
+  height: 600px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   /* padding: 200px 252px; */
-  max-width: 650px;
 }
 
 .hero .title {
@@ -200,6 +235,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
+  max-width: 650px;
+  /* outline: 5px solid red; */
 }
 
 .hero .button {
@@ -229,6 +266,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .features .list .title {
   /* стили для заголовков h3 ОСОБЕННОСТЕЙ */
   font-weight: 700;
@@ -246,6 +284,9 @@ body {
   padding: 0;
 }
 
+/* .features .list {
+  flex-wrap: nowrap;
+} */
 .features .list .item {
   /* ширина столбиков с текстом в Особенностях */
   flex-basis: calc((100% - 3 * 30px) / 4);
@@ -255,6 +296,17 @@ body {
   margin-right: 30px;
 }
 
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+.featuers .item.feature-1::before {
+  content: "";
+  /* display: block; */
+  height: 120px;
+  background-color: var(--team-container-background);
+  /* background-size: contain; */
+}
 /* ======================================================== */
 /* ======================WHAT WE DO======================== */
 /* ======================================================== */
@@ -338,6 +390,39 @@ body {
   line-height: 1.19;
   text-align: center;
   padding-bottom: 30px;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+.social-list {
+  padding: 0;
+  justify-content: center;
+}
+
+.social-list .icon {
+  background-color: red;
+  margin-right: 10px;
+  background-color: green;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: covercontain;
+}
+.icon .list .item:not(:last-child) {
+  margin-right: 10px;
+}
+.icon .link {
+  /* width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  border-radius: 50%; */
 }
 
 /* ======================================================== */
