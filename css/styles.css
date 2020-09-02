@@ -161,7 +161,7 @@ body {
   letter-spacing: 0.02em;
 }
 .mail-tel-nav .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 /* ------------------------------------------------ */
@@ -169,26 +169,27 @@ body {
 /* ------------------------------------------------ */
 /* ------------------------------------------------*/
 
-/* .mail-tel-nav .mail::before {
-  content: "";
+.mail-tel-nav .icon.mail {
   width: 16px;
   height: 12px;
+  fill: var(--inside-color);
   margin-right: 10px;
-  display: inline-flex;
-  background-image: url(../images/icons/mail-icon.svg);
-  /* background-size: cover; */
-/* }  */
-
-/* background-size: cover; */
-/* } */
-
-.icon-mail {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  /* background-color: red; */
-  background-position: bottom;
 }
+
+.mail-tel-nav .icon.tel {
+  width: 10px;
+  height: 16px;
+  fill: var(--inside-color);
+  margin-right: 10px;
+}
+
+.mail-tel-nav .link:hover .tel,
+.mail-tel-nav .link:focus .tel,
+.mail-tel-nav .link:hover .mail,
+.mail-tel-nav .link:focus .mail {
+  fill: var(--active-color);
+}
+
 /* ======================================================== */
 /* ======================HERO============================== */
 /* ======================================================== */
@@ -415,15 +416,15 @@ body {
 .icon .list .item:not(:last-child) {
   margin-right: 10px;
 }
-.icon .link {
-  /* width: 40px;
+/* .icon .link { */
+/* width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: green;
   border-radius: 50%; */
-}
+/* } */
 
 /* ======================================================== */
 /* ======================FOOTER============================ */
