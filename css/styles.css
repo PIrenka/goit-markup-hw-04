@@ -30,7 +30,8 @@ img {
 
 :root {
   --title-color: #ffffff;
-  --title-background-color: #2f303a;
+  --hero-background-color: #2f303a;
+  --hero-overlay-color: rgba(47, 48, 58, 0.4);
   --minititles-color: #212121;
   --inside-color: #757575;
   --active-color: #2196f3;
@@ -164,25 +165,20 @@ body {
   margin-right: 30px;
 }
 
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-/* ------------------------------------------------ */
-/* ------------------------------------------------*/
-
 .mail-tel-nav .icon.mail {
+  /* стили для иконки почты, цвет со спрайта-удалён */
   width: 16px;
   height: 12px;
   fill: var(--inside-color);
   margin-right: 10px;
 }
-
 .mail-tel-nav .icon.tel {
+  /* стили для иконки телефона */
   width: 10px;
   height: 16px;
   fill: var(--inside-color);
   margin-right: 10px;
 }
-
 .mail-tel-nav .link:hover .tel,
 .mail-tel-nav .link:focus .tel,
 .mail-tel-nav .link:hover .mail,
@@ -195,35 +191,31 @@ body {
 /* ======================================================== */
 
 .hero {
-  /*  стили для секции Hero, особенно для фона Героя*/
-  background: var(--title-background-color);
-  /* background-image: url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1599436800&Signature=WDVgOczkWaJ6izlPvtaJ0UglchnrAeoj~IlCVR96-TeplGpMRJTkYV1MJwFtwWpguAB3rAe4pDbLT1fUaaYLm1S3LVSl-m8~iKNIATmqbMuACjy5HncK3LvFKMnhCld0B8E1M0Shv3O2pJtjFYMe~q6Cn76Rm87sURBP8K4EYxhQ7nUtagnWwZtxDzQ~xdlWHSl3A6BDIW4pceE7nMDu6IK11nbxqBlUJaqWjtFKiAccDWiAqKREO7wXzwksSeUiAITxe98B6HHGm02l1WLiw06zLLo1YrJ0g-CjtR9L49y6Gl2PRPIUZxEzGxuQWipooiVaFOc7J2M65r-wtEKhNw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"); */
-
-  /* не то что надо!!!! background-position: top 80px left 0px; */
-  background-size: cover;
-  background-size: 1600px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1599436800&Signature=WDVgOczkWaJ6izlPvtaJ0UglchnrAeoj~IlCVR96-TeplGpMRJTkYV1MJwFtwWpguAB3rAe4pDbLT1fUaaYLm1S3LVSl-m8~iKNIATmqbMuACjy5HncK3LvFKMnhCld0B8E1M0Shv3O2pJtjFYMe~q6Cn76Rm87sURBP8K4EYxhQ7nUtagnWwZtxDzQ~xdlWHSl3A6BDIW4pceE7nMDu6IK11nbxqBlUJaqWjtFKiAccDWiAqKREO7wXzwksSeUiAITxe98B6HHGm02l1WLiw06zLLo1YrJ0g-CjtR9L49y6Gl2PRPIUZxEzGxuQWipooiVaFOc7J2M65r-wtEKhNw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
-  background-repeat: no-repeat;
-  background-position: top 35% center;
-  /* background-size: auto auto; */
-  /* text-align: center; */
-  /* height: 600px; */
-  outline: 5px solid orange;
+  /*  стили для секции Hero, особенно для фона Героя если не подгрузился файл CSS*/
+  background: var(--hero-background-color);
+  /* outline: 5px solid orange; */
 }
 
-.hero .container {
+.hero .container-hero {
   /* стили для контейнера Героя с заголовком и кнопкой */
-  outline: 5px solid yellow;
+  /* outline: 5px solid yellow; */
   max-width: 1600px;
   height: 600px;
+  margin-right: auto;
+  margin-left: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* padding: 200px 252px; */
+  background-size: contain;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
 .hero .title {
@@ -432,7 +424,7 @@ body {
 
 .page-footer {
   /* стили для подвала сайта */
-  background-color: var(--title-background-color);
+  background-color: var(--hero-background-color);
   line-height: 1.71;
   /* display: block; */
 }
