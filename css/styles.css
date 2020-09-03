@@ -40,6 +40,7 @@ img {
   --tel-in-footer-color: rgba(255, 255, 255, 0.6);
   --header-bottom-line: #ececec;
   --projects-card-border: #eeeeee;
+  --team-social-icons-fill: #afb1b8;
 }
 
 body {
@@ -340,6 +341,7 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+
 /* ======================================================== */
 /* ======================WHAT WE DO======================== */
 /* ======================================================== */
@@ -422,41 +424,50 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+.list.social {
   padding-bottom: 30px;
-}
-/* ------------------------------------------- */
-/* ------------------------------------------- */
-/* ------------------------------------------- */
-
-.social-list {
-  padding: 0;
   justify-content: center;
 }
 
-.social-list .icon {
-  background-color: red;
-  margin-right: 10px;
-  background-color: green;
+.list.social .item-social .link {
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: covercontain;
+  box-shadow: none; /* скрыть тени от круглых иконок */
+  background-color: var(--title-color);
+  padding: 12px;
 }
-.icon .list .item:not(:last-child) {
+.social .item-social:not(:last-child) {
   margin-right: 10px;
 }
-/* .icon .link { */
-/* width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
-  border-radius: 50%; */
-/* } */
+
+.list.social .icon.instagram,
+.list.social .icon.twitter,
+.list.social .icon.facebook,
+.list.social .icon.linkedin {
+  /* background-color: green; */
+  width: 20px;
+  height: 20px;
+  fill: var(--team-social-icons-fill);
+
+  /* position: absolute; */
+}
+
+.list.social .link:hover .instagram,
+.list.social .link:hover .twitter,
+.list.social .link:hover .facebook,
+.list.social .link:hover .linkedin {
+  fill: var(--title-color);
+}
+.list.social .item-social .link:hover {
+  background-color: var(--active-color);
+}
 
 /* ======================================================== */
 /* ======================FOOTER============================ */
@@ -469,10 +480,15 @@ body {
   /* display: block; */
 }
 
-.page-footer .list {
+.footer-contacts {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-right: 70px;
 }
+/* .page-footer .list {
+  padding-top: 60px;
+  padding-bottom: 60px;
+} */
 .page-footer .logo {
   /* отступы для Лого в футере */
   margin-bottom: 20px;
@@ -495,6 +511,51 @@ body {
   margin-top: 9px;
   /* padding-bottom: 60px; */
   display: block;
+}
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+.footer-social-contacts {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+.join-to-us .text {
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  /* padding-top: 12px; тут костыль так как ранее задавала падинги для ул в футере:60пх */
+}
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+.list.footer-social {
+  justify-content: center;
+  padding: 0;
+}
+
+.list.footer-social .item-social .link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: none; /* скрыть тени от круглых иконок */
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+}
+.footer-social .item-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.list.footer-social .icon.instagram,
+.list.footer-social .icon.twitter,
+.list.footer-social .icon.facebook,
+.list.footer-social .icon.linkedin {
+  width: 20px;
+  height: 20px;
+  fill: var(--title-color);
+}
+.list.footer-social .item-social .link:hover {
+  background-color: var(--active-color);
 }
 
 /* ======================================================== */
@@ -634,8 +695,3 @@ svg img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
-/* .icon {
-  --color1: red;
-  --color2: blue;
-} */
