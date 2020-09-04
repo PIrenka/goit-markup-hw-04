@@ -27,10 +27,10 @@
             <nav class="header-nav">
                 <ul class="list site-nav flexbox">
                     <li class="item">
-                        <a href="./index.html" class="link"> <span>Студия</span> </a>
+                        <a href="/" class="link current"> <span>Студия</span> </a>
                     </li>
                     <li class="item">
-                        <a href="./portfolio.html" class="link current"> <span>Портфолио</span> </a>
+                        <a href="./portfolio.html" class="link"> <span>Портфолио</span> </a>
                     </li>
                     <li class="item">
                         <a href="/" class="link"> <span>Контакты</span> </a>
@@ -39,8 +39,18 @@
             </nav>
 
             <ul class="list mail-tel-nav flexbox">
-                <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
-                <li class="item"> <a href="tel:+380991111111" class="link">+38 096 111 11 11</a> </li>
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="link" aria-label="Написать письмо на">
+                        <svg class="icon mail">
+                            <use href="./images/icons/sprite.svg#mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380991111111" class="link" aria-label="Позвонить по номеру">
+                        <svg class="icon tel">
+                            <use href="./images/icons/sprite.svg#tel"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
             </ul>
 
         </div>
@@ -140,22 +150,58 @@
 
     <!-- Подвал -->
     <footer class="page-footer">
-        <div class="container footer">
-            <ul class="list">
-                <li class="item">
-                    <a href="./index.html" lang="en" class="link logo"> <span class="web-logotext">Web</span><span
-                            class="studio-logotext">Studio</span>
-                    </a>
-                </li>
-                <li class="item">
-                    <address>
-                        <span class="address">г. Киев, пр-т Леси Украинки, 26</span>
-                    </address>
-                </li>
-                <li class="item"> <a href="mailto:info@example.com" class="link mailtel-in-footer">info@example.com</a>
-                </li>
-                <li class="item"> <a href="tel:+380991111111" class="link mailtel-in-footer">+38 099 111 11 11</a> </li>
-            </ul>
+        <div class="container footer flexbox">
+            <div class="footer-contacts">
+                <ul class="list">
+                    <li class="item">
+                        <a href="./index.html" lang="en" class="link logo"> <span class="web-logotext">Web</span><span
+                                class="studio-logotext">Studio</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <address>
+                            <span class="address">г. Киев, пр-т Леси Украинки, 26</span>
+                        </address>
+                    </li>
+                    <li class="item"> <a href="mailto:info@example.com"
+                            class="link mailtel-in-footer">info@example.com</a>
+                    </li>
+                    <li class="item"> <a href="tel:+380991111111" class="link mailtel-in-footer">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-social-contacts">
+                <ul class="list join-to-us">
+                    <li class="item">
+                        <p class="text">присоединяйтесь</p>
+                    </li>
+                    <li class="item">
+                        <ul class="list footer-social flexbox">
+                            <li class="item-social"> <a href="https://www.instagram.com/" target="_blank"
+                                    class="link flexbox">
+                                    <svg class="icon instagram">
+                                        <use href="./images/icons/sprite.svg#instagram"></use>
+                                    </svg></a> </li>
+                            <li class="item-social"> <a href="https://www.twitter.com/" target="_blank"
+                                    class="link flexbox">
+                                    <svg class="icon twitter">
+                                        <use href="./images/icons/sprite.svg#twitter"> </use>
+                                    </svg></a></li>
+                            <li class="item-social"> <a href="https://www.facebook.com/" target="_blank"
+                                    class="link flexbox">
+                                    <svg class="icon facebook">
+                                        <use href="./images/icons/sprite.svg#facebook"> </use>
+                                    </svg></a></li>
+                            <li class="item-social"> <a href="https://www.linkedin.com/" target="_blank"
+                                    class="link flexbox">
+                                    <svg class="icon linkedin">
+                                        <use href="./images/icons/sprite.svg#linkedin"> </use>
+                                    </svg></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
