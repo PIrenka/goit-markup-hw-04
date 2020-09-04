@@ -687,6 +687,7 @@ body {
   cursor: pointer;
   padding: 0;
   padding: 6px 22px;
+  border-radius: 4px;
 }
 .portfolio-button:hover,
 .portfolio-button:focus,
