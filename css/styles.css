@@ -554,17 +554,17 @@ body {
 }
 
 .link:hover .client-1,
-.icon.client-2:hover,
-.icon.client-3:hover,
-.icon.client-4:hover,
-.icon.client-5:hover,
-.icon.client-6:hover,
-.icon.client-1:focus,
-.icon.client-2:focus,
-.icon.client-3:focus,
-.icon.client-4:focus,
-.icon.client-5:focus,
-.icon.client-6:focus {
+.link:hover .client-2,
+.link:hover .client-3,
+.link:hover .client-4,
+.link:hover .client-5,
+.link:hover .client-6,
+.link:focus .client-1,
+.link:focus .client-2,
+.link:focus .client-3,
+.link:focus .client-4,
+.link:focus .client-5,
+.link:focus .client-6 {
   /* заливка иконок логотипов компаний при ховере */
   fill: var(--active-color);
   cursor: pointer;
