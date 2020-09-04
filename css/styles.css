@@ -88,6 +88,7 @@ body {
 .item .link:active {
   /* возможность выделять другим цветом ссылки при наведении курсора на них */
   color: var(--active-color);
+  outline-color: var(--active-color);
 }
 
 /* ======================================================== */
@@ -108,6 +109,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   display: inline-block;
+  outline-color: var(--active-color);
 }
 
 .page-header .logo {
